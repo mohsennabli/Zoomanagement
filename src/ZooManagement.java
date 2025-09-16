@@ -15,10 +15,11 @@ public class ZooManagement {
 
         Animal dog = new Animal("doberman", "daleji", 11, true);
 
-        Zoo zoo = new Zoo ("Belvedaire","Tunis",5);
+        Zoo myZoo = new Zoo("Myzoo", "tunis", 30);
 
         System.out.println("Zoo Name"+zoo.name);
-
+        System.out.println(myZoo);
+        System.out.println(myZoo.toString());
 
 
 

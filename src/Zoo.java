@@ -19,5 +19,17 @@ class Zoo {
             System.out.println("Zoo full");
         }
     }
+    public void displayZoo(){
+        System.out.println("Zoo name: "+name);
+        System.out.println("Zoo city: "+city);
+        System.out.println("Zoo nbr cages: "+nbrCages);
+    }
+
+    @Override
+    public String toString() {
+        return "Zoo{name='" + name + "'," +
+                " city='" + city + "', cages=" +
+                nbrCages + ", animaux=" + animalCount + "}";
+    }
 
 }
