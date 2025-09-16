@@ -10,4 +10,14 @@ class Zoo {
         this.nbrCages = nbrCages;
         this.animals = new Animal[25];
     }
+
+    public void addAnimal(Animal a) {
+        if (animalCount < 25) {
+            animals[animalCount] = a;
+            animalCount++;
+        } else {
+            System.out.println("Zoo full");
+        }
+    }
+
 }
