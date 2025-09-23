@@ -2,13 +2,12 @@ class Zoo {
     Animal[] animals;
     String name;
     String city;
-    int nbrCages;
+    static final int nbrCages =25;
     int animalCount;
 
     public Zoo(String name, String city, int nbrCages) {
         this.name = name;
         this.city = city;
-        this.nbrCages = nbrCages;
         this.animals = new Animal[nbrCages];
         this.animalCount = 0;
 
