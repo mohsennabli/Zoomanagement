@@ -17,7 +17,7 @@ public class ZooManagement {
         Animal cat = new Animal("gatt", "bechbech", 3, true);
         Animal bird = new Animal("boumzayen", "ziwziw", 2, false);
         Zoo myZoo = new Zoo("Myzoo", "tunis", 30);
-
+        myZoo.addAnimal(dog);
         /*System.out.println("Zoo Name"+myZoo.name);
         System.out.println(myZoo);
         System.out.println(myZoo.toString());*/
@@ -28,9 +28,10 @@ public class ZooManagement {
         myZoo2.addAnimal(cat);
         myZoo2.addAnimal(dog);
 
-        myZoo2.removeAnimal(dog);
+        /*myZoo2.removeAnimal(dog);*/
 
 
+        System.out.println(Zoo.comparerZoo(myZoo, myZoo2).name);
         myZoo2.displayAnimals();
         myZoo2.displayZoo();
         System.out.println(myZoo2.isZooFull());

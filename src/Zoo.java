@@ -70,7 +70,16 @@ class Zoo {
         return false;
     }
 
-    public void displayZoo(){
+    public static Zoo comparerZoo(Zoo z1, Zoo z2) {
+        if (z1.animalCount >= z2.animalCount) {
+            return z1;
+        } else {
+            return z2;
+        }
+    }
+
+
+        public void displayZoo(){
         System.out.println("Zoo name: "+name);
         System.out.println("Zoo city: "+city);
         System.out.println("Zoo nbr cages: "+nbrCages);
