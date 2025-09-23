@@ -54,6 +54,18 @@ class Zoo {
 
     }
 
+    public boolean removeAnimal(Animal animal) {
+        if (animal == null){return false;}
+        for (int i = 0; i < this.animals.length; i++) {
+            if (animals[i]!=null && (animals[i].name == animal.name)){
+                this.animals[i] = null;
+                animalCount--;
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void displayZoo(){
         System.out.println("Zoo name: "+name);
         System.out.println("Zoo city: "+city);

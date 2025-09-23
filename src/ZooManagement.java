@@ -28,13 +28,14 @@ public class ZooManagement {
         myZoo2.addAnimal(cat);
         myZoo2.addAnimal(dog);
 
+        myZoo2.removeAnimal(dog);
+
 
         myZoo2.displayAnimals();
         myZoo2.displayZoo();
 
         int index = myZoo2.searchAnimal(dog);
         System.out.println(index);
-
 
 
     }
