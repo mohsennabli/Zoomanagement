@@ -39,6 +39,17 @@ class Zoo {
         return false;
     }
 
+    public int searchAnimal(Animal animal) {
+        if (animal == null){return -1;}
+        for (int i = 0; i < this.animals.length; i++) {
+            if (animals[i]!=null && (animals[i].name == animal.name)){
+                return i;
+            }
+        }
+        return -1;
+
+    }
+
     public void displayZoo(){
         System.out.println("Zoo name: "+name);
         System.out.println("Zoo city: "+city);
