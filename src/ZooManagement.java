@@ -14,12 +14,22 @@ public class ZooManagement {
         System.out.println("Zoo Name: "+ZooName+ " nbr Cages: "+nbrCages);*/
 
         Animal dog = new Animal("doberman", "daleji", 11, true);
-
+        Animal cat = new Animal("gatt", "bechbech", 3, true);
+        Animal bird = new Animal("boumzayen", "ziwziw", 2, false);
         Zoo myZoo = new Zoo("Myzoo", "tunis", 30);
 
-        System.out.println("Zoo Name"+zoo.name);
+        /*System.out.println("Zoo Name"+myZoo.name);
         System.out.println(myZoo);
-        System.out.println(myZoo.toString());
+        System.out.println(myZoo.toString());*/
+
+
+        Zoo myZoo2 = new Zoo("Belvedaire", "tunis", 3);
+        myZoo2.addAnimal(dog);
+        myZoo2.addAnimal(cat);
+        myZoo2.addAnimal(bird);
+
+        myZoo2.displayAnimals();
+        myZoo2.displayZoo();
 
 
 
