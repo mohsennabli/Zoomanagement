@@ -26,12 +26,16 @@ class Zoo {
     }
 
     public boolean addAnimal(Animal animal) {
-        if (animalCount>=nbrCages){
-            return false;
+        if (animal == null) return false;
+        if (animalCount >= nbrCages) return false;
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] != null && (animals[i].name) ==animal.name) {
+                return false;
+            }
         }
-        for (int i = 0; i < this.animals.length; i++) {
-            if (animals[i]==null) {
-                animals[i]=animal;
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] == null) {
+                animals[i] = animal;
                 animalCount++;
                 return true;
             }
