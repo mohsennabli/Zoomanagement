@@ -65,6 +65,11 @@ class Zoo {
         return false;
     }
 
+    public boolean isZooFull() {
+        if (animalCount>=nbrCages){return true;}
+        return false;
+    }
+
     public void displayZoo(){
         System.out.println("Zoo name: "+name);
         System.out.println("Zoo city: "+city);

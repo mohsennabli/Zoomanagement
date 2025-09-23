@@ -33,6 +33,7 @@ public class ZooManagement {
 
         myZoo2.displayAnimals();
         myZoo2.displayZoo();
+        System.out.println(myZoo2.isZooFull());
 
         int index = myZoo2.searchAnimal(dog);
         System.out.println(index);
