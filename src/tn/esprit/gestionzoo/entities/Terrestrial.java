@@ -22,6 +22,6 @@ public class Terrestrial extends Animal {
 
     @Override
     public String toString() {
-        return  "name='" + getName() + "', nbrLegs=" + nbrLegs;
+        return  super.toString()+ "', nbrLegs=" + nbrLegs;
     }
 }

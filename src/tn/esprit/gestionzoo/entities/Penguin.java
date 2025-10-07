@@ -18,6 +18,6 @@ public class Penguin extends Aquatic{
 
     @Override
     public String toString() {
-        return  "name='" + getName() + "', habitat='" + getHabitat() + "', swimmingDepth=" + swimmingDepth;
+        return  super.toString()+ "', swimmingDepth=" + swimmingDepth;
     }
 }

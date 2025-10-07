@@ -19,6 +19,6 @@ public class Dolphin extends Aquatic {
 
     @Override
     public String toString() {
-        return "name='" + getName() + "', habitat='" + getHabitat() + "', swimmingSpeed=" + swimmingSpeed;
+        return super.toString() + "', swimmingSpeed=" + swimmingSpeed;
     }
 }

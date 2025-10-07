@@ -21,6 +21,6 @@ public class Aquatic extends Animal {
     }
     @Override
     public String toString() {
-        return  "name='" + getName() + "', habitat='" + habitat;
+        return super.toString() +"', habitat='" + habitat;
     }
 }
