@@ -1,6 +1,8 @@
 package tn.esprit.gestionzoo.main;
 
 import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.Dolphin;
+import tn.esprit.gestionzoo.entities.Penguin;
 import tn.esprit.gestionzoo.entities.Zoo;
 
 public class ZooManagement {
@@ -16,32 +18,37 @@ public class ZooManagement {
         nbrCages = input.nextInt();
         System.out.println("tn.esprit.gestionzoo.entities.Zoo Name: "+ZooName+ " nbr Cages: "+nbrCages);*/
 
-        Animal dog = new Animal("doberman", "daleji", 11, true);
+        /*Animal dog = new Animal("doberman", "daleji", 11, true);
         Animal cat = new Animal("gatt", "bechbech", 3, true);
         Animal bird = new Animal("boumzayen", "ziwziw", 2, false);
         Zoo myZoo = new Zoo("Myzoo", "tunis", 30);
-        myZoo.addAnimal(dog);
+        myZoo.addAnimal(dog);*/
         /*System.out.println("tn.esprit.gestionzoo.entities.Zoo Name"+myZoo.name);
         System.out.println(myZoo);
         System.out.println(myZoo.toString());*/
 
 
-        Zoo myZoo2 = new Zoo("Belvedaire", "tunis", 3);
+        /*Zoo myZoo2 = new Zoo("Belvedaire", "tunis", 3);
         myZoo2.addAnimal(dog);
         myZoo2.addAnimal(cat);
-        myZoo2.addAnimal(dog);
+        myZoo2.addAnimal(dog);*/
 
         /*myZoo2.removeAnimal(dog);*/
 
 
-        System.out.println(Zoo.comparerZoo(myZoo, myZoo2).getName());
+        /*System.out.println(Zoo.comparerZoo(myZoo, myZoo2).getName());
         myZoo2.displayAnimals();
         myZoo2.displayZoo();
         System.out.println(myZoo2.isZooFull());
 
         int index = myZoo2.searchAnimal(dog);
-        System.out.println(myZoo2);
+        System.out.println(myZoo2);*/
 
 
+
+        Dolphin dolphin = new Dolphin("dalfoun", "battah", 25);
+        Penguin penguin = new Penguin("batri9", 15);
+        System.out.println(dolphin.toString());
+        System.out.println(penguin.toString());
     }
 }

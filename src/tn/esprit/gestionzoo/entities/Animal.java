@@ -12,38 +12,49 @@ public class Animal {
         this.age = age;
         this.isMammal = isMammal;
     }
+
     public Animal(String name) {
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Animal{name='" + name + "', family='" + family + "', age=" + age + ", isMammal=" + isMammal + "}";
-
+        return "name='" + name + "', family='" + family + "', age=" + age + ", isMammal=" + isMammal ;
     }
 
     public String getFamily() {
         return family;
     }
+
     public void setFamily(String family) {
         this.family = family;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         if (age < 0) {
             this.age = 0;
+        } else {
+            this.age = age;
         }
-        this.age = age;
     }
 
+    public boolean isMammal() {
+        return isMammal;
+    }
 
-
+    public void setMammal(boolean mammal) {
+        isMammal = mammal;
+    }
 }
