@@ -1,9 +1,6 @@
 package tn.esprit.gestionzoo.main;
 
-import tn.esprit.gestionzoo.entities.Animal;
-import tn.esprit.gestionzoo.entities.Dolphin;
-import tn.esprit.gestionzoo.entities.Penguin;
-import tn.esprit.gestionzoo.entities.Zoo;
+import tn.esprit.gestionzoo.entities.*;
 
 public class ZooManagement {
     public static void main(String[] args) {
@@ -50,5 +47,10 @@ public class ZooManagement {
         Penguin penguin = new Penguin("batri9", 15);
         System.out.println(dolphin.toString());
         System.out.println(penguin.toString());
+        Aquatic aquatic = new Aquatic("ssss");
+
+        aquatic.swim();
+        dolphin.swim();
+        penguin.swim();
     }
 }
