@@ -66,6 +66,14 @@ public class ZooManagement {
         System.out.println(maximum);
         aquaZoo.displayNumberByType();
 
+        Aquatic a1 = new Aquatic("Dolphin", 5, "Ocean");
+        Aquatic a2 = new Aquatic("Dolphin", 5, "Ocean");
+
+
+
+        System.out.println(a1.equals(a2));
+
+
 
 
 

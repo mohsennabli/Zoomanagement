@@ -16,11 +16,11 @@ public class Animal {
     public Animal(String name) {
         this.name = name;
     }
-
     @Override
     public String toString() {
         return "name='" + name + "', family='" + family + "', age=" + age + ", isMammal=" + isMammal ;
     }
+
 
     public String getFamily() {
         return family;
