@@ -127,6 +127,20 @@ public class Zoo {
     }
 
 
+    public float maxPenguinSwimmingDepth(){
+        float max = 0;
+        for (int i = 0; i < nbrAquaticAnimals; i++) {
+            if (aquaticAnimals[i] instanceof Penguin) {
+                Penguin p = (Penguin) aquaticAnimals[i];
+                if (p.getSwimmingDepth() > max) {
+                    max = p.getSwimmingDepth();
+                }
+            }
+        }
+        return max;
+    }
+
+
 
     @Override
     public String toString() {

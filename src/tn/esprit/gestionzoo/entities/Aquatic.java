@@ -25,6 +25,6 @@ public class Aquatic extends Animal {
     }
 
     public void swim() {
-        System.out.println("This aquatic animal is swimming.");
+        System.out.println("This aquatic animal is not swimming anymore.");
     }
 }

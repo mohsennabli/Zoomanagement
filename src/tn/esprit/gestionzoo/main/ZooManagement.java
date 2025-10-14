@@ -45,6 +45,10 @@ public class ZooManagement {
 
         Dolphin dolphin = new Dolphin("dalfoun", "battah", 25);
         Penguin penguin = new Penguin("batri9", 15);
+        Penguin penguin2 = new Penguin("batri9_2", 21);
+        Penguin penguin3 = new Penguin("batri9_3", 25);
+
+
         System.out.println(dolphin.toString());
         System.out.println(penguin.toString());
         Aquatic aquatic = new Aquatic("ssss");
@@ -56,6 +60,12 @@ public class ZooManagement {
         Zoo aquaZoo = new Zoo("belvedaire","tunis",15);
         aquaZoo.addAquaticAnimal(dolphin);
         aquaZoo.addAquaticAnimal(penguin);
+        aquaZoo.addAquaticAnimal(penguin2);
+        aquaZoo.addAquaticAnimal(penguin3);
+        float maximum=aquaZoo.maxPenguinSwimmingDepth();
+        System.out.println(maximum);
+
+
 
 
     }
