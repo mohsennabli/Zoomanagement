@@ -6,7 +6,7 @@ public class Zoo {
     private String city;
     static final int nbrCages =25;
     private int animalCount;
-
+    private Aquatic[] aquaticAnimals = new Aquatic[10];
     public Zoo(String name, String city, int nbrCages) {
         this.name = name;
         this.city = city;
