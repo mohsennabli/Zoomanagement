@@ -7,6 +7,7 @@ public class Zoo {
     static final int nbrCages =25;
     private int animalCount;
     private Aquatic[] aquaticAnimals = new Aquatic[10];
+    private int nbrAquaticAnimals;
     public Zoo(String name, String city, int nbrCages) {
         this.name = name;
         this.city = city;
@@ -114,6 +115,16 @@ public class Zoo {
         System.out.println("Zoo nbr cages: "+nbrCages);
     }
 
+    public void addAquaticAnimal(Aquatic aquatic) {
+        if (nbrAquaticAnimals>=aquaticAnimals.length){
+            System.out.println("aquatic animals is full");
+        }
+        else {
+            aquaticAnimals[nbrAquaticAnimals] = aquatic;
+            nbrAquaticAnimals++;
+            System.out.println("aquatic animal added successfully");
+        }
+    }
 
 
 
