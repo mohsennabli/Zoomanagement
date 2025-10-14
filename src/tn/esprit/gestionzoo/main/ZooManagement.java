@@ -64,6 +64,7 @@ public class ZooManagement {
         aquaZoo.addAquaticAnimal(penguin3);
         float maximum=aquaZoo.maxPenguinSwimmingDepth();
         System.out.println(maximum);
+        aquaZoo.displayNumberByType();
 
 
 

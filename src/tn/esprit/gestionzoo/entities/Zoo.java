@@ -140,6 +140,21 @@ public class Zoo {
         return max;
     }
 
+    public void displayNumberByType() {
+        int countDolphins = 0;
+        int countPenguins = 0;
+
+        for (int i = 0; i < nbrAquaticAnimals; i++) {
+            if (aquaticAnimals[i] instanceof Dolphin)
+                countDolphins++;
+            else if (aquaticAnimals[i] instanceof Penguin)
+                countPenguins++;
+        }
+
+        System.out.println("Nombre de dauphins : " + countDolphins);
+        System.out.println("Nombre de pingouins : " + countPenguins);
+    }
+
 
 
     @Override
