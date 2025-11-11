@@ -1,5 +1,8 @@
 package tn.esprit.gestionzoo.entities;
 
+import tn.esprit.gestionzoo.exceptions.InvalidAgeException;
+import tn.esprit.gestionzoo.exceptions.ZooFullException;
+
 public class Zoo {
     Animal[] animals;
     private String name;
@@ -52,25 +55,34 @@ public class Zoo {
         }
     }
 
-    public boolean addAnimal(Animal animal) {
-        if (animal == null) return false;
-        if (isZooFull()) return false;
-        else{
-            for (int i = 0; i < animals.length; i++) {
-                if (animals[i] != null && (animals[i].getName()) ==animal.getName()) {
-                    return false;
-                }
+    public void addAnimal(Animal animal) throws ZooFullException, InvalidAgeException {
+        if (animal == null) return;
+
+        if (animal.getAge() < 0) {
+            throw new InvalidAgeException("Âge invalide pour l'animal : " + animal.getName());
+        }
+
+        if (isZooFull()) {
+            throw new ZooFullException("Le zoo est plein ! Impossible d'ajouter " + animal.getName());
+        }
+
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] != null && animals[i].getName().equals(animal.getName())) {
+                System.out.println("L'animal " + animal.getName() + " existe déjà !");
+                return;
             }
-            for (int i = 0; i < animals.length; i++) {
-                if (animals[i] == null) {
-                    animals[i] = animal;
-                    animalCount++;
-                    return true;
-                }
+        }
+
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] == null) {
+                animals[i] = animal;
+                animalCount++;
+                System.out.println("Animal ajouté avec succès : " + animal.getName());
+                return;
             }
-            return false;
         }
     }
+
 
     public int searchAnimal(Animal animal) {
         if (animal == null){return -1;}
